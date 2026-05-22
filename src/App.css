@@ -1,0 +1,72 @@
+/* Unified Apple Space-Gray Dark Theme Canvas & Layers */
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+  background-color: #000000; /* Pure Apple Black Desktop background */
+  color: #f5f5f7; /* Off-White primary text */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for sleek appearance */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161617; /* Matches right-side canvas */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3c; /* Defined scrollbar thumb */
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48484a;
+}
+
+/* Premium micro-glow animations */
+@keyframes neon-glow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.01);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), 0 0 3px rgba(255, 255, 255, 0.03);
+  }
+}
+
+.premium-glow {
+  animation: neon-glow 8s infinite ease-in-out;
+}
+
+/* Glassmorphism custom styling utilities */
+.glass-panel {
+  background: #09090a; /* Premium dark framework window */
+  border: 1px solid #1c1c1e;
+}
+
+.glass-card {
+  background: #1d1d1f; /* Apple standard card gray */
+  border: 1px solid #2d2d30; /* Crisp dark-chrome border */
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: #252528; /* Slightly lighter on hover */
+  border-color: #424245;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
