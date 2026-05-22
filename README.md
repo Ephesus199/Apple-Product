@@ -1,12 +1,84 @@
-# React + Vite
+🍎 Apple Product Showcase
+A modern, responsive web application showcasing Apple's iconic product lineup including iPhone, MacBook, iMac, and Apple Watch. Built with React and styled with Tailwind CSS for a sleek, Apple-inspired user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Product Browsing: Explore different Apple product categories with dedicated pages
+Responsive Design: Beautifully designed interface that works seamlessly on all devices
+Client-Side Routing: Fast navigation between product pages using React Router
+Modern Styling: Tailwind CSS for utility-first, maintainable styling
+Fast Build & Development: Powered by Vite for lightning-fast HMR (Hot Module Replacement)
+📱 Product Categories
+iPhone - Latest smartphone technology
+MacBook - Premium laptop computers
+iMac - All-in-one desktop displays
+Apple Watch - Wearable technology
+🛠️ Tech Stack
+React ^19.1.1 - UI library
+React Router ^7.8.2 - Client-side routing
+Vite ^7.1.2 - Build tool and dev server
+Tailwind CSS ^4.1.12 - Utility-first CSS framework
+ESLint ^9.33.0 - Code quality and consistency
+🚀 Getting Started
+Prerequisites
+Node.js (v16 or higher)
+npm or yarn
+Installation
+Clone the repository:
+git clone <repository-url>
+cd Apple-Product
+Install dependencies:
+npm install
+Development
+Start the development server with hot module reloading:
 
-Currently, two official plugins are available:
+npm run dev
+The application will be available at http://localhost:5173 (or your configured port).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Build
+Create an optimized production build:
 
-## Expanding the ESLint configuration
+npm run build
+The compiled assets will be in the dist/ directory.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Preview
+Preview the production build locally:
+
+npm run preview
+Linting
+Check code quality and styling consistency:
+
+npm run lint
+📁 Project Structure
+src/
+├── Components/
+│   ├── AppLayout.jsx      # Main app layout wrapper
+│   ├── Home.jsx           # Landing page
+│   ├── Iphone.jsx         # iPhone product page
+│   ├── Macbook.jsx        # MacBook product page
+│   ├── Watch.jsx          # Apple Watch product page
+│   └── Imac.jsx           # iMac product page
+├── assets/                # Static images and media
+├── data/                  # Product data and constants
+├── App.jsx               # Root app component with routing
+├── App.css               # App-level styles
+├── main.jsx              # Application entry point
+└── index.css             # Global styles
+🎨 Styling
+This project uses Tailwind CSS for styling. All components are styled with utility classes, ensuring consistency and easy maintenance.
+
+📦 Dependencies
+Core Dependencies
+react - React library
+react-dom - React DOM rendering
+react-router - SPA routing
+tailwindcss - CSS framework
+@tailwindcss/vite - Vite plugin for Tailwind
+Dev Dependencies
+vite - Build tool
+@vitejs/plugin-react - React support for Vite
+eslint - Code linting
+📄 License
+This project is created for educational purposes as part of React learning tutorials.
+
+🤝 Contributing
+Contributions are welcome! Feel free to submit issues and enhancement requests.
